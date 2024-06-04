@@ -1,0 +1,43 @@
+<scene>
+    <group>
+        <transform>
+            <set>
+                <translate>0 50 -50</translate>
+                <scale>50 100 5</scale>
+            </set>
+            <group name="mirror1" from="scenegraphs/extracredit/mirror.xml"></group>
+        </transform>
+        <transform>
+            <set>
+                <translate>-50 50 -45</translate>
+                <rotate>20 0 1 0</rotate>
+                <scale>50 100 5</scale>
+            </set>
+            <group name="mirror2" from="scenegraphs/extracredit/mirror.xml"></group>
+        </transform>
+        <transform>
+            <set>
+                <translate>50 50 -45</translate>
+                <rotate>-20 0 1 0</rotate>
+                <scale>50 100 5</scale>
+            </set>
+            <group name="mirror3" from="scenegraphs/extracredit/mirror.xml"></group>
+        </transform>
+        <transform>
+            <set>
+                <translate>-95 50 -25</translate>
+                <rotate>40 0 1 0</rotate>
+                <scale>50 100 5</scale>
+            </set>
+            <group name="mirror4" from="scenegraphs/extracredit/mirror.xml"></group>
+        </transform>
+        <transform>
+            <set>
+                <translate>95 50 -25</translate>
+                <rotate>-40 0 1 0</rotate>
+                <scale>50 100 5</scale>
+            </set>
+            <group name="mirror5" from="scenegraphs/extracredit/mirror.xml"></group>
+        </transform>
+    </group>
+</scene>

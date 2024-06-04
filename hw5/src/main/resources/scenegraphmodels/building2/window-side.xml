@@ -1,0 +1,39 @@
+<scene>
+    <group>
+        <transform>
+            <set>
+                <translate>-40 0 0</translate>
+            </set>
+            <group name="l" from="scenegraphmodels/building2/steelPlate.xml">
+            </group>
+        </transform>
+        <transform>
+            <set>
+                <translate>-20 0 0</translate>
+            </set>
+            <group name="l" from="scenegraphmodels/building2/window.xml">
+            </group>
+        </transform>
+        <transform>
+            <set>
+                <translate>0 0 0</translate>
+            </set>
+            <group name="c" from="scenegraphmodels/building2/steelPlate.xml">
+            </group>
+        </transform>
+        <transform>
+            <set>
+                <translate>20 0 0</translate>
+            </set>
+            <group name="l" from="scenegraphmodels/building2/window.xml">
+            </group>
+        </transform>
+        <transform>
+            <set>
+                <translate>40 0 0</translate>
+            </set>
+            <group name="r" from="scenegraphmodels/building2/steelPlate.xml">
+            </group>
+        </transform>
+    </group>
+</scene>

@@ -1,0 +1,58 @@
+<scene>
+    <group>
+        <transform>
+            <set>
+                <translate>0 0 0</translate>
+            </set>
+            <group name="marble1" from="scenegraphs/extracredit/marble.xml"></group>
+        </transform>
+        <transform>
+            <set>
+                <translate>100 0 0</translate>
+            </set>
+            <group name="marble2" from="scenegraphs/extracredit/marble.xml"></group>
+        </transform>
+        <transform>
+            <set>
+                <translate>200 0 0</translate>
+            </set>
+            <group name="marble3" from="scenegraphs/extracredit/marble.xml"></group>
+        </transform>
+        <transform>
+            <set>
+                <translate>100 0 100</translate>
+            </set>
+            <group name="marble4" from="scenegraphs/extracredit/marble.xml"></group>
+        </transform>
+        <transform>
+            <set>
+                <translate>100 0 200</translate>
+            </set>
+            <group name="marble5" from="scenegraphs/extracredit/marble.xml"></group>
+        </transform>
+        <transform>
+            <set>
+                <translate>200 0 100</translate>
+            </set>
+            <group name="marble6" from="scenegraphs/extracredit/marble.xml"></group>
+        </transform>
+        <transform>
+            <set>
+                <translate>200 0 200</translate>
+            </set>
+            <group name="marble7" from="scenegraphs/extracredit/marble.xml"></group>
+        </transform>
+        <transform>
+            <set>
+                <translate>0 0 100</translate>
+            </set>
+            <group name="marble8" from="scenegraphs/extracredit/marble.xml"></group>
+        </transform>
+        <transform>
+            <set>
+                <translate>0 0 200</translate>
+            </set>
+            <group name="marble9" from="scenegraphs/extracredit/marble.xml"></group>
+        </transform>
+    </group>
+</scene>

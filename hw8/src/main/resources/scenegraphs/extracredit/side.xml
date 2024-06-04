@@ -1,0 +1,28 @@
+<scene>
+    <group>
+        <transform>
+            <set>
+                <translate>-300 0 -300</translate>
+            </set>
+            <group name ="floor1" from="scenegraphs/extracredit/floorpiece.xml"></group>
+        </transform>
+        <transform>
+            <set>
+                <translate>-300 0 0</translate>
+            </set>
+            <group name ="floor2" from="scenegraphs/extracredit/floorpiece.xml"></group>
+        </transform>
+        <transform>
+            <set>
+                <translate>0 0 -300</translate>
+            </set>
+            <group name ="floor3" from="scenegraphs/extracredit/floorpiece.xml"></group>
+        </transform>
+        <transform>
+            <set>
+                <translate>0 0 0</translate>
+            </set>
+            <group name ="floor4" from="scenegraphs/extracredit/floorpiece.xml"></group>
+        </transform>
+    </group>
+</scene>

@@ -1,0 +1,41 @@
+<scene>
+    <instance name="sphere" path="models/sphere"></instance>
+
+    <transform>
+        <set>
+            <!-- Translate axes so drone camera is not in sphere. -->
+            <translate>0 0 10</translate>
+        </set>
+        <group>
+            <transform name="position">
+                <set>
+                    <scale>10 10 10</scale>
+                </set>
+                <object instanceof="sphere">
+                    <material>
+                        <color>1 1 1</color>
+                    </material>
+                </object>
+            </transform>
+
+            <group name="up" from="scenegraphmodels/arrows/red.xml">
+            </group>
+
+            <transform name="right">
+                <set>
+                    <rotate>-90 0 0 1</rotate>
+                </set>
+                <group from="scenegraphmodels/arrows/blue.xml">
+                </group>
+            </transform>
+
+            <transform name="opposite-of-gaze">
+                <set>
+                    <rotate>90 1 0 0</rotate>
+                </set>
+                <group from="scenegraphmodels/arrows/green.xml">
+                </group>
+            </transform>
+        </group>
+    </transform>
+</scene>

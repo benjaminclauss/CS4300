@@ -1,0 +1,10 @@
+building/building.xml
+200
+50
+150
+0
+0
+0
+0
+1
+0

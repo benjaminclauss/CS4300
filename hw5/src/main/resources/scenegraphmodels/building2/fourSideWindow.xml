@@ -1,0 +1,34 @@
+<scene>
+    <group>
+        <transform>
+            <set>
+                <translate>0 0 10</translate>
+            </set>
+            <group name="front" from="scenegraphmodels/building2/window-side.xml">
+            </group>
+        </transform>
+        <transform>
+            <set>
+                <translate>0 0 -90</translate>
+            </set>
+            <group name="back" from="scenegraphmodels/building2/window-side.xml">
+            </group>
+        </transform>
+        <transform>
+            <set>
+                <translate>-50 0 -40</translate>
+                <rotate>90 0 1 0</rotate>
+            </set>
+            <group name="left" from="scenegraphmodels/building2/window-side.xml">
+            </group>
+        </transform>
+        <transform>
+            <set>
+                <translate>50 0 -40</translate>
+                <rotate>90 0 1 0</rotate>
+            </set>
+            <group name="right" from="scenegraphmodels/building2/window-side.xml">
+            </group>
+        </transform>
+    </group>
+</scene>

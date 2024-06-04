@@ -1,0 +1,39 @@
+<scene>
+    <group>
+        <transform>
+            <set>
+                <translate>-100 0 0</translate>
+            </set>
+            <group from="scenegraphmodels/building/blocks/wall-block.xml">
+            </group>
+        </transform>
+        <transform>
+            <set>
+                <translate>-50 0 0</translate>
+            </set>
+            <group from="scenegraphmodels/building/blocks/closed-window-block.xml">
+            </group>
+        </transform>
+        <transform>
+            <set>
+                <translate>0 0 0</translate>
+            </set>
+            <group from="scenegraphmodels/building/blocks/wall-block.xml">
+            </group>
+        </transform>
+        <transform>
+            <set>
+                <translate>50 0 0</translate>
+            </set>
+            <group from="scenegraphmodels/building/blocks/closed-window-block.xml">
+            </group>
+        </transform>
+        <transform>
+            <set>
+                <translate>100 0 0</translate>
+            </set>
+            <group from="scenegraphmodels/building/blocks/wall-block.xml">
+            </group>
+        </transform>
+    </group>
+</scene>

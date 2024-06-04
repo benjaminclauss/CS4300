@@ -1,0 +1,43 @@
+<scene>
+    <group>
+    <transform>
+        <set>
+            <translate>0 50 0</translate>
+            <scale>1 0.6 1</scale>
+        </set>
+        <group name="1" from="scenegraphmodels/building2/tower.xml">
+        </group>
+    </transform>
+    <transform>
+        <set>
+            <translate>0 188 -5</translate>
+            <scale>0.8 0.3 0.8</scale>
+        </set>
+        <group name="2" from="scenegraphmodels/building2/tower.xml">
+        </group>
+    </transform>
+    <transform>
+        <set>
+            <translate>0 257 -10</translate>
+            <scale>0.5 0.2 0.5</scale>
+        </set>
+        <group name="3" from="scenegraphmodels/building2/tower.xml">
+        </group>
+    </transform>
+    <transform>
+        <set>
+            <translate>0 303 -20</translate>
+            <scale>0.2 0.1 0.2</scale>
+        </set>
+        <group name="4" from="scenegraphmodels/building2/tower.xml">
+        </group>
+    </transform>
+        <transform>
+            <set>
+                <translate>0 326 10</translate>
+            </set>
+            <group name="4" from="scenegraphmodels/building2/roof.xml">
+            </group>
+        </transform>
+    </group>
+</scene>

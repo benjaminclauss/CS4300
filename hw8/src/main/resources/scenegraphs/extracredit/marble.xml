@@ -1,0 +1,21 @@
+<scene>
+    <image name="marble" path="textures/marble.jpg" />
+    <instance name="box" path="models/box-outside"></instance>
+    <transform>
+        <set>
+            <translate>0 0 0</translate>
+            <scale>100 1 100</scale>
+        </set>
+        <object instanceof="box" texture="marble">
+            <material>
+                <ambient>0.9 0.9 0.9</ambient>
+                <diffuse>0.8 0.8 0.8</diffuse>
+                <specular>0.8 0.8 0.8</specular>
+                <shininess>100</shininess>
+                <absorption>1</absorption>
+                <transparency>0</transparency>
+                <reflection>0</reflection>
+            </material>
+        </object>
+    </transform>
+</scene>

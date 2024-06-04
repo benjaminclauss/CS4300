@@ -1,0 +1,297 @@
+<scene>
+    <instance name="sphere" path="models/sphere"></instance>
+    <instance name="box" path="models/box"></instance>
+    <instance name="cylinder" path="models/cylinder"></instance>
+    <instance name="cone" path="models/cone"></instance>
+
+    <transform>
+        <set>
+            <translate> 0 0 45 </translate>
+            <rotate> 180 0 1 0 </rotate>
+        </set>
+
+        <group>
+            <group name="core">
+                <group name="body">
+                    <transform>
+                        <set>
+                            <scale> 25 15 80 </scale>
+                        </set>
+                        <group>
+                            <object instanceof="box">
+                                <material>
+                                    <color> 1 1 1 </color>
+                                </material>
+                            </object>
+                        </group>
+                    </transform>
+                </group>
+                <group name="arms">
+                    <group name="arm">
+                        <transform>
+                            <set>
+                                <translate>-12.5 0 35</translate>
+                                <rotate>90 0 0 1</rotate>
+                                <scale> 5 25 5 </scale>
+                            </set>
+                            <group>
+                                <object instanceof="cylinder">
+                                    <material>
+                                        <color> 1 1 1 </color>
+                                    </material>
+                                </object>
+                            </group>
+                        </transform>
+                        <transform>
+                            <set>
+                                <translate>-37.5 0 35</translate>
+                                <scale> 5 5 5 </scale>
+                            </set>
+                            <group>
+                                <object instanceof="sphere">
+                                    <material>
+                                        <color> 1 1 1 </color>
+                                    </material>
+                                </object>
+                            </group>
+                        </transform>
+                        <transform>
+                            <set>
+                                <translate>-37.5 0 35</translate>
+                                <scale> 5 25 5 </scale>
+                            </set>
+                            <group>
+                                <object instanceof="cylinder">
+                                    <material>
+                                        <color> 1 1 1 </color>
+                                    </material>
+                                </object>
+                            </group>
+                        </transform>
+                    </group>
+                    <group name="arm">
+                        <transform>
+                            <set>
+                                <translate>12.5 0 35</translate>
+                                <rotate>-90 0 0 1</rotate>
+                                <scale> 5 25 5 </scale>
+                            </set>
+                            <group>
+                                <object instanceof="cylinder">
+                                    <material>
+                                        <color> 1 1 1 </color>
+                                    </material>
+                                </object>
+                            </group>
+                        </transform>
+                        <transform>
+                            <set>
+                                <translate>37.5 0 35</translate>
+                                <scale> 5 5 5 </scale>
+                            </set>
+                            <group>
+                                <object instanceof="sphere">
+                                    <material>
+                                        <color> 1 1 1 </color>
+                                    </material>
+                                </object>
+                            </group>
+                        </transform>
+                        <transform>
+                            <set>
+                                <translate>37.5 0 35</translate>
+                                <scale> 5 25 5 </scale>
+                            </set>
+                            <group>
+                                <object instanceof="cylinder">
+                                    <material>
+                                        <color> 1 1 1 </color>
+                                    </material>
+                                </object>
+                            </group>
+                        </transform>
+                    </group>
+                    <group name="arm">
+                        <transform>
+                            <set>
+                                <translate>-12.5 0 -35</translate>
+                                <rotate>90 0 0 1</rotate>
+                                <scale> 5 25 5 </scale>
+                            </set>
+                            <group>
+                                <object instanceof="cylinder">
+                                    <material>
+                                        <color> 1 1 1 </color>
+                                    </material>
+                                </object>
+                            </group>
+                        </transform>
+                        <transform>
+                            <set>
+                                <translate>-37.5 0 -35</translate>
+                                <scale> 5 5 5 </scale>
+                            </set>
+                            <group>
+                                <object instanceof="sphere">
+                                    <material>
+                                        <color> 1 1 1 </color>
+                                    </material>
+                                </object>
+                            </group>
+                        </transform>
+                        <transform>
+                            <set>
+                                <translate>-37.5 0 -35</translate>
+                                <scale> 5 25 5 </scale>
+                            </set>
+                            <group>
+                                <object instanceof="cylinder">
+                                    <material>
+                                        <color> 1 1 1 </color>
+                                    </material>
+                                </object>
+                            </group>
+                        </transform>
+                    </group>
+                    <group name="arm">
+                        <transform>
+                            <set>
+                                <translate>12.5 0 -35</translate>
+                                <rotate>-90 0 0 1</rotate>
+                                <scale> 5 25 5 </scale>
+                            </set>
+                            <group>
+                                <object instanceof="cylinder">
+                                    <material>
+                                        <color> 1 1 1 </color>
+                                    </material>
+                                </object>
+                            </group>
+                        </transform>
+                        <transform>
+                            <set>
+                                <translate>37.5 0 -35</translate>
+                                <scale> 5 5 5 </scale>
+                            </set>
+                            <group>
+                                <object instanceof="sphere">
+                                    <material>
+                                        <color> 1 1 1 </color>
+                                    </material>
+                                </object>
+                            </group>
+                        </transform>
+                        <transform>
+                            <set>
+                                <translate>37.5 0 -35</translate>
+                                <scale> 5 25 5 </scale>
+                            </set>
+                            <group>
+                                <object instanceof="cylinder">
+                                    <material>
+                                        <color> 1 1 1 </color>
+                                    </material>
+                                </object>
+                            </group>
+                        </transform>
+                    </group>
+                </group>
+            </group>
+
+            <group name="propellers">
+                <transform>
+                    <set>
+                        <translate> -37.5 25 35 </translate>
+                    </set>
+                    <transform name="propeller-1">
+                        <group from="scenegraphmodels/drone/propeller.xml">
+                        </group>
+                    </transform>
+                </transform>
+                <transform>
+                    <set>
+                        <translate> 37.5 25 35 </translate>
+                    </set>
+                    <transform name="propeller-2">
+                        <group from="scenegraphmodels/drone/propeller.xml">
+                        </group>
+                    </transform>
+                </transform>
+                <transform>
+                    <set>
+                        <translate> -37.5 25 -35 </translate>
+                    </set>
+                    <transform name="propeller-3">
+                        <group from="scenegraphmodels/drone/propeller.xml">
+                        </group>
+                    </transform>
+                </transform>
+                <transform>
+                    <set>
+                        <translate> 37.5 25 -35 </translate>
+                    </set>
+                    <transform name="propeller-4">
+                        <group from="scenegraphmodels/drone/propeller.xml">
+                        </group>
+                    </transform>
+                </transform>
+            </group>
+
+            <group name="camera">
+                <transform>
+                    <set>
+                        <translate> 0 0 40 </translate>
+                        <rotate> 90 1 0 0</rotate>
+                        <scale> 5 5 5 </scale>
+                    </set>
+                    <group>
+                        <object instanceof="cylinder">
+                            <material>
+                                <color> 0.5 0.5 0.5 </color>
+                            </material>
+                        </object>
+                    </group>
+                </transform>
+            </group>
+
+            <group name="light-holder">
+                <transform>
+                    <set>
+                        <translate> 0 -10 0 </translate>
+                        <scale> 10 10 80 </scale>
+                    </set>
+                    <group>
+                        <object instanceof="box">
+                            <material>
+                                <color> 1 1 1 </color>
+                            </material>
+                        </object>
+                    </group>
+                </transform>
+                <transform>
+                    <set>
+                        <translate> 0 -10 40 </translate>
+                        <scale> 2.5 2.5 2.5 </scale>
+                    </set>
+
+                    <group>
+                        <light>
+                            <ambient>1 1 1</ambient>
+                            <diffuse>0.5 0.5 0.5</diffuse>
+                            <specular>0.5 0.5 0.5</specular>
+                            <position>0 0 0</position>
+                            <spotangle>30</spotangle>
+                            <spotdirection>0 0 1</spotdirection>
+                        </light>
+
+                        <object instanceof="sphere">
+                            <material>
+                                <color> 1 1 0 </color>
+                            </material>
+                        </object>
+                    </group>
+                </transform>
+            </group>
+        </group>
+    </transform>
+</scene>

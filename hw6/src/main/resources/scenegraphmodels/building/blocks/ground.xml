@@ -1,0 +1,21 @@
+<scene>
+    <instance name="box" path="models/box.obj"></instance>
+    <image name = "grass" path="textures/grass.png"></image>
+    <group>
+        <transform>
+            <set>
+                <scale> 500 50 500 </scale>
+            </set>
+            <group>
+                <object name="base" instanceof="box" texture="grass">
+                    <material>
+                        <ambient> 1 1 1 </ambient>
+                        <diffuse> 1 1 1</diffuse>
+                        <specular> 0.1 0.5 0.5</specular>
+                        <shininess> 100 </shininess>
+                    </material>
+                </object>
+            </group>
+        </transform>
+    </group>
+</scene>

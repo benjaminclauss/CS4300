@@ -1,0 +1,39 @@
+<scene>
+    <instance name="cone" path="models/cone.obj" />
+    <instance name="cylinder" path="models/cylinder.obj" />
+    <instance name="box" path="models/box.obj" />
+    <group>
+        <transform>
+            <set>
+                <translate> 0 20 -40 </translate>
+                <scale>10 50 10 </scale>
+            </set>
+            <group>
+                <object instanceof="cone">
+                    <material>
+                        <ambient>1 1 1</ambient>
+                        <diffuse>1 1 1</diffuse>
+                        <specular>0.8 0.8 0.8</specular>
+                        <shininess>10</shininess>
+                    </material>
+                </object>
+            </group>
+        </transform>
+        <transform>
+            <set>
+                <translate> 0 0 -40 </translate>
+                <scale>10 20 10 </scale>
+            </set>
+            <group>
+                <object instanceof="cylinder">
+                    <material>
+                        <ambient>1 1 1</ambient>
+                        <diffuse>1 1 1</diffuse>
+                        <specular>0.8 0.8 0.8</specular>
+                        <shininess>10</shininess>
+                    </material>
+                </object>
+            </group>
+        </transform>
+    </group>
+</scene>

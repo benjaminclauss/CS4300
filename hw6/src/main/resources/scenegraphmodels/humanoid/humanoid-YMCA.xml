@@ -1,0 +1,41 @@
+<scene>
+    <image name="white" path="textures/white.png"></image>
+
+    <light>
+        <ambient>1 1 1</ambient>
+        <diffuse>0.5 0.5 0.5</diffuse>
+        <specular>0.5 0.5 0.5</specular>
+        <position>100 100 100</position>
+    </light>
+
+    <group>
+        <transform>
+            <set>
+                <translate>-90 0 0</translate>
+            </set>
+            <group name="Y" from="scenegraphmodels/humanoid/humanoid-Y.xml">
+            </group>
+        </transform>
+        <transform>
+            <set>
+                <translate>-30 0 0</translate>
+            </set>
+            <group name="M" from="scenegraphmodels/humanoid/humanoid-M.xml">
+            </group>
+        </transform>
+        <transform>
+            <set>
+                <translate>30 0 0</translate>
+            </set>
+            <group name="C" from="scenegraphmodels/humanoid/humanoid-C.xml">
+            </group>
+        </transform>
+        <transform>
+            <set>
+                <translate>90 0 0</translate>
+            </set>
+            <group name="A" from="scenegraphmodels/humanoid/humanoid-A.xml">
+            </group>
+        </transform>
+    </group>
+</scene>

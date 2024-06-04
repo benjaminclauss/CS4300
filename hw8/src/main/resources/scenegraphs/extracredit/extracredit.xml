@@ -1,0 +1,69 @@
+<scene>
+    <instance name="sphere" path="models/sphere"></instance>
+    <instance name="box" path="models/box-outside"></instance>
+    <image name="white" path="textures/white.png" />
+    <image name="earth" path="textures/earthmap.png" />
+    <image name="marble" path="textures/marble.jpg" />
+    <image name="die" path="textures/die.png" />
+
+    <light>
+        <ambient>0.8 0.8 0.8</ambient>
+        <diffuse>0.8 0.8 0.8</diffuse>
+        <specular>0.8 0.8 0.8</specular>
+        <position>0 200 200</position>
+        <spotangle>180</spotangle>
+        <spotdirection>0 -1 0</spotdirection>
+    </light>
+
+    <transform>
+        <set>
+            <translate>0 20 0</translate>
+            <scale>20 20 20</scale>
+        </set>
+        <object instanceof="sphere" texture="earth">
+            <material>
+                <ambient>0.9 0.9 0.9</ambient>
+                <diffuse>0.8 0.8 0.8</diffuse>
+                <specular>0.8 0.8 0.8</specular>
+                <shininess>100</shininess>
+                <absorption>1</absorption>
+            </material>
+        </object>
+    </transform>
+
+    <transform>
+        <set>
+            <translate>30 15 0</translate>
+            <scale>15 15 15</scale>
+        </set>
+
+        <object instanceof="box" texture="die">
+            <material>
+                <ambient> 0.2 0.2 0.2 </ambient>
+                <diffuse> 0.8 0.8 0.8</diffuse>
+                <specular> 0.8 0.8 0.8</specular>
+                <shininess> 100 </shininess>
+                <absorption>1</absorption>
+            </material>
+        </object>
+    </transform>
+
+    <group name="side1" from="scenegraphs/extracredit/side.xml"></group>
+
+    <group>
+        <transform>
+        <set>
+            <translate>0 0 -100</translate>
+        </set>
+            <group name="mirrors1" from="scenegraphs/extracredit/mirrors.xml"></group>
+        </transform>
+        <transform>
+            <set>
+                <translate>0 0 100</translate>
+                <rotate>180 0 1 0</rotate>
+            </set>
+            <group name="mirrors2" from="scenegraphs/extracredit/mirrors.xml"></group>
+        </transform>
+    </group>
+
+</scene>

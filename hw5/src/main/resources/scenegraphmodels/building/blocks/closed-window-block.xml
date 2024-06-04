@@ -1,0 +1,25 @@
+<scene>
+    <group>
+        <transform>
+            <set>
+                <translate>0 -25 0</translate>
+            </set>
+            <group name="bottom" from="scenegraphmodels/building/bricks/two-brick.xml">
+            </group>
+        </transform>
+        <transform>
+            <set>
+                <translate>0 0 0</translate>
+            </set>
+            <group name="middle" from="scenegraphmodels/building/bricks/window-brick.xml">
+            </group>
+        </transform>
+        <transform>
+            <set>
+                <translate>0 25 0</translate>
+            </set>
+            <group name="middle" from="scenegraphmodels/building/bricks/two-brick.xml">
+            </group>
+        </transform>
+    </group>
+</scene>

@@ -1,0 +1,42 @@
+<scene>
+    <instance name="sphere" path="models/sphere"></instance>
+    <instance name="cylinder" path="models/cylinder"></instance>
+    <image name="white" path="textures/white.png"></image>
+    <image name="checkerboard" path ="textures/checkerboard.png"></image>
+
+    <light>
+        <ambient>0.8 0.8 0.8</ambient>
+        <diffuse>0.8 0.8 0.8</diffuse>
+        <specular>0.8 0.8 0.8</specular>
+        <position>0 0 100 </position>
+        <spotangle>180</spotangle>
+        <spotdirection>1 0 0 </spotdirection>
+    </light>
+
+    <transform name="drone">
+        <set>
+            <scale>0.25 0.25 0.25</scale>
+        </set>
+        <group name="drone-model" from="scenegraphmodels/drone/drone.xml">
+        </group>
+    </transform>
+
+    <group name="ball">
+        <transform>
+            <set>
+                <scale> 50 50 50 </scale>
+            </set>
+
+            <group>
+                <object instanceof="sphere" texture="checkerboard">
+                    <material>
+                        <ambient>1 1 1</ambient>
+                        <diffuse>0.8 0.8 0</diffuse>
+                        <specular>0.8 0.8 1</specular>
+                        <shininess>50</shininess>
+                    </material>
+                </object>
+            </group>
+        </transform>
+    </group>
+</scene>

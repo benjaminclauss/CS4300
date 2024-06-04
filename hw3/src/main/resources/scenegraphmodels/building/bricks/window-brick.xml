@@ -1,0 +1,18 @@
+<scene>
+    <instance name="box" path="models/box.obj" />
+
+    <group>
+        <transform>
+            <set>
+                <scale> 50 25 10 </scale>
+            </set>
+            <group>
+                <object instanceof="box">
+                    <material>
+                        <color> 0 0 1 </color>
+                    </material>
+                </object>
+            </group>
+        </transform>
+    </group>
+</scene>

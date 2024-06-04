@@ -1,0 +1,51 @@
+<scene>
+    <instance name="box" path="models/box.obj" />
+
+    <transform>
+        <set>
+            <scale> 0.5 0.5 0.5 </scale>
+        </set>
+        <group name="scene">
+            <group name="building">
+                <group name="roof">
+                    <transform>
+                        <set>
+                            <translate>0 125 0</translate>
+                            <scale> 300 25 300 </scale>
+                        </set>
+                        <group>
+                            <object instanceof="box">
+                                <material>
+                                    <color> 1 0 0 </color>
+                                </material>
+                            </object>
+                        </group>
+                    </transform>
+                </group>
+                <group name="floors">
+                    <transform>
+                        <set>
+                            <translate> 0 -75 0 </translate>
+                        </set>
+                        <group from="scenegraphmodels/building/floors/floor.xml">
+                        </group>
+                    </transform>
+                    <transform>
+                        <set>
+                            <translate> 0 0 0 </translate>
+                        </set>
+                        <group from="scenegraphmodels/building/floors/open-floor.xml">
+                        </group>
+                    </transform>
+                    <transform>
+                        <set>
+                            <translate> 0 75 0 </translate>
+                        </set>
+                        <group from="scenegraphmodels/building/floors/floor.xml">
+                        </group>
+                    </transform>
+                </group>
+            </group>
+        </group>
+    </transform>
+</scene>

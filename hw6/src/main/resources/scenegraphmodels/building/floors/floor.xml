@@ -1,0 +1,64 @@
+<scene>
+    <group name="corners">
+        <transform>
+            <set>
+                <translate>137.5 0 137.5</translate>
+            </set>
+            <group from="scenegraphmodels/building/blocks/one-block.xml">
+            </group>
+        </transform>
+        <transform>
+            <set>
+                <translate>137.5 0 -137.5</translate>
+            </set>
+            <group from="scenegraphmodels/building/blocks/one-block.xml">
+            </group>
+        </transform>
+        <transform>
+            <set>
+                <translate>-137.5 0 137.5</translate>
+            </set>
+            <group from="scenegraphmodels/building/blocks/one-block.xml">
+            </group>
+        </transform>
+        <transform>
+            <set>
+                <translate>-137.5 0 -137.5</translate>
+            </set>
+            <group from="scenegraphmodels/building/blocks/one-block.xml">
+            </group>
+        </transform>
+    </group>
+    <group name="walls">
+        <transform>
+            <set>
+                <translate>0 0 137.5</translate>
+            </set>
+            <group from="scenegraphmodels/building/walls/wall.xml">
+            </group>
+        </transform>
+        <transform>
+            <set>
+                <translate>-137.5 0 0</translate>
+                <rotate>90 0 1 0</rotate>
+            </set>
+            <group from="scenegraphmodels/building/walls/wall.xml">
+            </group>
+        </transform>
+        <transform>
+            <set>
+                <translate>137.5 0 0</translate>
+                <rotate>90 0 1 0</rotate>
+            </set>
+            <group from="scenegraphmodels/building/walls/wall.xml">
+            </group>
+        </transform>
+        <transform>
+            <set>
+                <translate>0 0 -137.5</translate>
+            </set>
+            <group from="scenegraphmodels/building/walls/wall.xml">
+            </group>
+        </transform>
+    </group>
+</scene>

@@ -1,0 +1,23 @@
+<scene>
+    <instance name="box" path="models/box.obj" />
+
+    <group>
+        <transform>
+            <set>
+                <translate> 0 0 0 </translate>
+                <scale> 20 20 2 </scale>
+            </set>
+            <group>
+                <object instanceof="box">
+                    <material>
+                        <ambient>1 1 1</ambient>
+                        <diffuse>1 1 1</diffuse>
+                        <specular>1 1 1</specular>
+                        <shininess>1</shininess>
+                    </material>
+                </object>
+            </group>
+        </transform>
+    </group>
+
+</scene>

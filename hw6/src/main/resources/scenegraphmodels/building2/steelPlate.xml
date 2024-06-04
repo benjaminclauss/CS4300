@@ -1,0 +1,23 @@
+<scene>
+    <instance name="box" path="models/box.obj" />
+    <image name = "checkerboard" path = "textures/checkerboard.png"></image>
+    <group>
+        <transform>
+            <set>
+                <translate> 0 0 0 </translate>
+                <scale> 20 20 2 </scale>
+            </set>
+            <group>
+                <object instanceof="box" texture="checkerboard">
+                    <material>
+                        <ambient>1 1 1</ambient>
+                        <diffuse>0.8 0.8 0</diffuse>
+                        <specular>0.8 0.8 1</specular>
+                        <shininess>1</shininess>
+                    </material>
+                </object>
+            </group>
+        </transform>
+    </group>
+
+</scene>

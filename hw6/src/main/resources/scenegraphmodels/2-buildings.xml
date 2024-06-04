@@ -1,0 +1,66 @@
+<scene>
+    <image name="white" path="textures/white.png"></image>
+    <image name = "grass" path="textures/grass.png"></image>
+    <image name = "checkerboard" path = "textures/checkerboard.png"></image>
+    <image name = "brick" path = "textures/brick.png"></image>
+
+    <!-- Stationary Lights -->
+    <light>
+        <ambient>0.1 0.1 0.1</ambient>
+        <diffuse>0.5 0.5 0.5</diffuse>
+        <specular>0.5 0.5 0.5</specular>
+        <position>100 100 100</position>
+    </light>
+
+    <light>
+        <ambient>0.1 0.1 0.1</ambient>
+        <diffuse>0.5 0.5 0.5</diffuse>
+        <specular>0.5 0.5 0.5</specular>
+        <position>-100 -100 -100</position>
+    </light>
+
+    <group>
+        <transform name="rotating-light">
+            <set></set>
+            <group>
+                <light>
+                    <ambient>0.8 0.8 0.8</ambient>
+                    <diffuse>0.5 0.5 0.5</diffuse>
+                    <specular>0.5 0.5 0.5</specular>
+                    <position>0 50 125</position>
+                    <spotangle>180</spotangle>
+                    <spotdirection>1 0 0 </spotdirection>
+                </light>
+            </group>
+        </transform>
+
+        <transform name="drone">
+            <set></set>
+            <group name="drone-model" from="scenegraphmodels/drone/drone.xml">
+            </group>
+        </transform>
+        <transform>
+            <set>
+                <translate>-25 -70 -50</translate>
+                <scale>0.6 0.2 0.6</scale>
+            </set>
+            <group name="base" from="scenegraphmodels/building/blocks/ground.xml">
+            </group>
+        </transform>
+        <transform>
+            <set>
+                <translate>-100 -10 0</translate>
+            </set>
+            <group name="left" from="scenegraphmodels/building/building.xml">
+            </group>
+        </transform>
+        <transform>
+            <set>
+                <translate>50 -100 0</translate>
+                <scale>1 0.75 1</scale>
+            </set>
+            <group name="right" from="scenegraphmodels/building2/building2.xml">
+            </group>
+        </transform>
+    </group>
+</scene>

@@ -1,0 +1,104 @@
+<scene>
+    <group>
+        <transform>
+            <set>
+                <translate>0 0 0</translate>
+            </set>
+            <group name="front" from="scenegraphmodels/building2/fourSideWall.xml">
+            </group>
+        </transform>
+        <transform>
+            <set>
+                <translate>0 20 0</translate>
+            </set>
+            <group name="back" from="scenegraphmodels/building2/fourSideWindow.xml">
+            </group>
+        </transform>
+        <transform>
+            <set>
+                <translate>0 40 0</translate>
+            </set>
+            <group name="left" from="scenegraphmodels/building2/fourSideWall.xml">
+            </group>
+        </transform>
+        <transform>
+            <set>
+                <translate>0 60 0</translate>
+            </set>
+            <group name="right" from="scenegraphmodels/building2/fourSideWindow.xml">
+            </group>
+        </transform>
+        <transform>
+            <set>
+                <translate>0 80 0</translate>
+            </set>
+            <group name="front" from="scenegraphmodels/building2/fourSideWall.xml">
+            </group>
+        </transform>
+        <transform>
+            <set>
+                <translate>0 100 0</translate>
+            </set>
+            <group name="back" from="scenegraphmodels/building2/fourSideWindow.xml">
+            </group>
+        </transform>
+        <transform>
+            <set>
+                <translate>0 120 0</translate>
+            </set>
+            <group name="left" from="scenegraphmodels/building2/fourSideWall.xml">
+            </group>
+        </transform>
+        <transform>
+            <set>
+                <translate>0 140 0</translate>
+            </set>
+            <group name="right" from="scenegraphmodels/building2/fourSideWindow.xml">
+            </group>
+        </transform>
+        <transform>
+            <set>
+                <translate>0 160 0</translate>
+            </set>
+            <group name="front" from="scenegraphmodels/building2/fourSideWall.xml">
+            </group>
+        </transform>
+        <transform>
+            <set>
+                <translate>0 180 0</translate>
+            </set>
+            <group name="back" from="scenegraphmodels/building2/fourSideWindow.xml">
+            </group>
+        </transform>
+        <transform>
+            <set>
+                <translate>0 200 0</translate>
+            </set>
+            <group name="left" from="scenegraphmodels/building2/fourSideWall.xml">
+            </group>
+        </transform>
+        <transform>
+            <set>
+                <translate>0 220 0</translate>
+            </set>
+            <group name="right" from="scenegraphmodels/building2/fourSideWindow.xml">
+            </group>
+        </transform>
+        <transform>
+            <set>
+                <translate> 0 230 -40 </translate>
+                <scale>100 5 100 </scale>
+            </set>
+            <group>
+                <object instanceof="box">
+                    <material>
+                        <ambient>1 1 1</ambient>
+                        <diffuse>1 1 1</diffuse>
+                        <specular>0 0 0</specular>
+                        <shininess>10</shininess>
+                    </material>
+                </object>
+            </group>
+        </transform>
+    </group>
+</scene>

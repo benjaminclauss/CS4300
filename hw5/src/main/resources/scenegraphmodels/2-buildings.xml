@@ -1,0 +1,27 @@
+<scene>
+    <group>
+        <transform>
+            <set>
+                <translate>-25 -70 -50</translate>
+                <scale>0.6 0.2 0.6</scale>
+            </set>
+            <group name = "base" from="scenegraphmodels/building/blocks/ground.xml">
+            </group>
+        </transform>
+        <transform>
+            <set>
+                <translate>-100 -10 0</translate>
+            </set>
+            <group name="left" from="scenegraphmodels/building/building.xml">
+            </group>
+        </transform>
+        <transform>
+            <set>
+                <translate>50 -100 0</translate>
+                <scale>1 0.75 1</scale>
+            </set>
+            <group name="right" from="scenegraphmodels/building2/building2.xml">
+            </group>
+        </transform>
+    </group>
+</scene>
